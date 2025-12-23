@@ -8,7 +8,7 @@ app = FastAPI()
 # Allow frontend access (IMPORTANT)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # later restrict
+    allow_origins=[" https://rahul636390.github.io/portfolio-frontend/"],  # later restrict
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -41,3 +41,4 @@ def contact(data: Contact):
     conn.close()
 
     return {"success": True}
+
