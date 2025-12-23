@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy  # if using a database
+jinja2      # optional, only if you use templates
